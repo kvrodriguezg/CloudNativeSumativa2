@@ -1,0 +1,6 @@
+cl\duoc\transporte\ubicaciones\config\RabbitConfig.class
+cl\duoc\transporte\ubicaciones\repository\UbicacionRepository.class
+cl\duoc\transporte\ubicaciones\controller\UbicacionController.class
+cl\duoc\transporte\ubicaciones\service\UbicacionService.class
+cl\duoc\transporte\ubicaciones\model\UbicacionEntity.class
+cl\duoc\transporte\ubicaciones\ProductorUbicacionesApplication.class

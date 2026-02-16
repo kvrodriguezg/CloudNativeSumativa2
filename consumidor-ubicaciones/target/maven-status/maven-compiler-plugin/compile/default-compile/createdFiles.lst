@@ -1,0 +1,5 @@
+cl\duoc\transporte\consumidor\ubicaciones\service\UbicacionListener.class
+cl\duoc\transporte\consumidor\ubicaciones\ConsumidorUbicacionesApplication.class
+cl\duoc\transporte\consumidor\ubicaciones\model\UbicacionEntity.class
+cl\duoc\transporte\consumidor\ubicaciones\repository\UbicacionRepository.class
+cl\duoc\transporte\consumidor\ubicaciones\config\RabbitConfig.class

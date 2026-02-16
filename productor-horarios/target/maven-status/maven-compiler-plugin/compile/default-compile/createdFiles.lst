@@ -1,0 +1,5 @@
+cl\duoc\transporte\horarios\repository\HorarioRepository.class
+cl\duoc\transporte\horarios\controller\HorarioController.class
+cl\duoc\transporte\horarios\model\HorarioEntity.class
+cl\duoc\transporte\horarios\config\RabbitConfig.class
+cl\duoc\transporte\horarios\ProductorHorariosApplication.class

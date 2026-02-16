@@ -1,0 +1,3 @@
+cl\duoc\transporte\consumidor\horarios\service\HorarioListener.class
+cl\duoc\transporte\consumidor\horarios\config\RabbitConfig.class
+cl\duoc\transporte\consumidor\horarios\ConsumidorHorariosApplication.class
