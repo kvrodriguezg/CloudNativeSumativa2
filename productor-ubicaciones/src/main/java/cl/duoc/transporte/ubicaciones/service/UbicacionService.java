@@ -24,7 +24,7 @@ public class UbicacionService {
     @Autowired
     private com.fasterxml.jackson.databind.ObjectMapper objectMapper;
 
-    //Simular el envío de coordenadas cada 5 segundos
+    //Simular el envío de coordenadas
     public void enviarUbicacion() {
         Map<String, Object> mensaje = new HashMap<>();
         mensaje.put("idVehiculo", "BUS-" + (random.nextInt(10) + 1));

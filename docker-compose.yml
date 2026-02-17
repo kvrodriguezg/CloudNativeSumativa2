@@ -1,15 +1,38 @@
-version: '3.8'
 services:
-  rabbitmq:
-    image: rabbitmq:3-management
+  productor-ubicaciones:
+    build: ./productor-ubicaciones
+    container_name: productor-ubicaciones
     ports:
-      - "5672:5672"
-      - "5672:5672"
+      - "8081:8081"
     environment:
-      RABBITMQ_DEFAULT_USER: guest
-      RABBITMQ_DEFAULT_PASS: guest
+      - SPRING_DATASOURCE_URL=jdbc:oracle:thin:@jaaa0f5tn6flh4kw_tp?TNS_ADMIN=/app/wallet
     volumes:
-      - "rabbitmq_data:/var/lib/rabbitmq"
+      - C:/Wallet_JAAA0F5TN6FLH4KW:/app/wallet
 
-volumes:
-  rabbitmq_data:
+  productor-horarios:
+    build: ./productor-horarios
+    container_name: productor-horarios
+    ports:
+      - "8082:8082"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:oracle:thin:@jaaa0f5tn6flh4kw_tp?TNS_ADMIN=/app/wallet
+    volumes:
+      - C:/Wallet_JAAA0F5TN6FLH4KW:/app/wallet
+
+  consumidor-ubicaciones:
+    build: ./consumidor-ubicaciones
+    container_name: consumidor-ubicaciones
+    ports:
+      - "8083:8083"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:oracle:thin:@jaaa0f5tn6flh4kw_tp?TNS_ADMIN=/app/wallet
+    volumes:
+      - C:/Wallet_JAAA0F5TN6FLH4KW:/app/wallet
+
+  consumidor-horarios:
+    build: ./consumidor-horarios
+    container_name: consumidor-horarios
+    ports:
+      - "8084:8084"
+    volumes:
+      - ./archivos_horarios:/app/archivos_horarios
